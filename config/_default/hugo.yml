@@ -1,0 +1,4 @@
+# https://gohugo.io/getting-started/configuration/
+baseUrl: "https://bravebright.github.io/"
+hasCJKLanguage: true # https://gohugo.io/getting-started/configuration/#hascjklanguage
+title: "BBBlog"
