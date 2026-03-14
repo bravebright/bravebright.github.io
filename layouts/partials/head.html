@@ -1,6 +1,10 @@
 <head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{{- if .Params.external }}
+		<meta http-equiv="refresh" content="0; url={{ .Params.external }}">
+		<script>window.location.replace({{ .Params.external | jsonify }});</script>
+		{{- end }}
 		{{- if .IsHome }}
 			<meta name="description" content="{{ .Site.Params.Description }}">
 		{{- else if .Description }}
